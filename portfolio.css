@@ -36,6 +36,14 @@ a {
     padding: 0 20px;
 }
 
+:root{
+    --header-h: 64px; /* 헤더 높이 (대략). 필요하면 70~84로 조정 */
+}
+
+section[id]{
+    scroll-margin-top: calc(var(--header-h) + 16px);
+}
+
 /* top */
 .top {
     position: sticky;
